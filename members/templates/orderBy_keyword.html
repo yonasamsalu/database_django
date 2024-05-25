@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ordering page</title>
+</head>
+<body>
+    <p>The queryset object:</p>
+    {{mymembers}}
+    <p>Loop through the items:</p>
+
+    <table border="1">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>ID</th>
+            <th>Phone</th>
+        </tr>
+
+      {% for y in mymembers %}
+        <tr>
+            <td>{{y.id}}</td>
+            <td>{{y.firstname}}</td>
+            <td>{{y.lastname}}</td>
+            <td>{{y.phone}}</td>
+
+        </tr>
+      {% endfor %}
+
+    </table>
+</body>
+</html>

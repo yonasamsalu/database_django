@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+{% for x in fruits %}
+  <h1>{{ x }}</h1>
+{% endfor %}
+<br>
+
+{% if "Orange" in fruits%}
+   <h2>Don't worry we have enough amount!!</h2>
+
+{% elif 'Orange' not in fruits %}   
+   <h1>The fruit is not found here </h1>
+{% endif %}
+
+<p>In views.py you can see what the fruits variable looks like.</p>
+
+</body>
+</html>

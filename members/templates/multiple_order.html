@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>multiple ordering page</title>
+</head>
+<body>
+    <p>The queryset object:</p>
+    {{mymembers}}
+    <p>Loop through the items:</p>
+
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Phone</th>
+            <th>Joined Date</th>
+        </tr>
+
+      {% for y in mymembers %}
+        <tr>
+            <td>{{y.id}}</td>
+            <td>{{y.firstname}}</td>
+            <td>{{y.lastname}}</td>
+            <td>{{y.phone}}</td>
+            <td>{{y.joined_date}}</td>
+
+        </tr>
+      {% endfor %}
+
+    </table>
+</body>
+</html>

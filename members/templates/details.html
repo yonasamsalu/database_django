@@ -1,0 +1,21 @@
+
+{% extends "master.html" %}
+
+{% block title %}
+  Details about {{ abi.firstname }} {{ abi.lastname }}
+{% endblock %}
+
+
+{% block content %}
+
+<h1 style="background-color: green; width: 250px;">{{ abi.firstname }}  {#{{ abi.lastname }}</h1>#}
+
+{%comment%}
+<p style="color: red;">Phone: {{ abi.phone }}</p>
+<p>Member since: {{ abi.joined_date }}</p>
+{% endcomment%}
+<p> Age: {{ abi.age }} </p>
+
+<p>Back to <a href="/metriya/tabling">Members</a></p>
+
+{% endblock %}

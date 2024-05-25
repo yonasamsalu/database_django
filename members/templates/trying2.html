@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>querying page</title>
+</head>
+<body>
+
+    <p>The queryset object:</p>
+
+    {{ mymembers }}
+    
+    <p>Loop through the items:</p>
+
+    <table border='1'>
+        <tr>
+          <th>Firstname</th>
+        </tr>
+
+        {% for x in mymembers %}
+          <tr>
+            <td>{{ x }}</td>  
+          </tr>
+        {% endfor %}
+      </table>
+         
+</body>
+</html>
